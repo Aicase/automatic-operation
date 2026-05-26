@@ -32,15 +32,26 @@ automatic-operation-skill/
 
 ## 🚀 快速开始
 
-### 环境依赖
+### 安装
 
 ```bash
-# Python 3.10+
-pip install playwright
-playwright install chromium
+# 方式一：pip 安装（推荐）
+pip install automatic-operation-skill
 
-# 可选：AI 精炼
-pip install requests
+# 方式二：从 GitHub 安装
+pip install git+https://github.com/Aicase/automatic-operation.git
+```
+
+安装后会自动安装 Playwright，手动安装浏览器：
+
+```bash
+playwright install chromium
+```
+
+如果需要 AI 精炼功能：
+
+```bash
+pip install automatic-operation-skill[ai]
 ```
 
 ### 录制自动化流程
