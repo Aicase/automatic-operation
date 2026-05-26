@@ -1,0 +1,94 @@
+[
+  {
+    "step_id": "step_001",
+    "description": "在集装箱输入框中填入箱号",
+    "action": "fill",
+    "locators": [
+      {
+        "strategy": "test_id",
+        "selector": "container-search-input"
+      },
+      {
+        "strategy": "label",
+        "selector": "集装箱号"
+      },
+      {
+        "strategy": "placeholder",
+        "selector": "Enter Container No."
+      },
+      {
+        "strategy": "role",
+        "role_type": "textbox",
+        "name": "集装箱号"
+      },
+      {
+        "strategy": "css_fuzzy",
+        "selector": "input[class^='TrackingInput_']"
+      }
+    ],
+    "value": "{{container_no}}",
+    "timeout": 5000,
+    "screenshots": {
+      "before": "screenshots/001_before.png",
+      "after": "screenshots/001_after.png"
+    }
+  },
+  {
+    "step_id": "step_002",
+    "description": "点击查询按钮",
+    "action": "click",
+    "locators": [
+      {
+        "strategy": "test_id",
+        "selector": "search-submit-btn"
+      },
+      {
+        "strategy": "role",
+        "role_type": "button",
+        "name": "Search"
+      },
+      {
+        "strategy": "text",
+        "selector": "查询"
+      },
+      {
+        "strategy": "css_fuzzy",
+        "selector": "button[class^='SearchButton_']"
+      }
+    ],
+    "value": null,
+    "timeout": 10000,
+    "assertion": {
+      "type": "visible",
+      "locator": {
+        "strategy": "css_fuzzy",
+        "selector": ".tracking-result-table"
+      }
+    },
+    "screenshots": {
+      "before": "screenshots/002_before.png",
+      "after": "screenshots/002_after.png"
+    }
+  },
+  {
+    "step_id": "step_003",
+    "description": "按下 Enter 确认提交",
+    "action": "press",
+    "locators": [
+      {
+        "strategy": "test_id",
+        "selector": "container-search-input"
+      },
+      {
+        "strategy": "placeholder",
+        "selector": "Enter Container No."
+      }
+    ],
+    "value": "Enter",
+    "timeout": 5000,
+    "screenshots": {
+      "before": "screenshots/003_before.png",
+      "after": "screenshots/003_after.png"
+    }
+  }
+]

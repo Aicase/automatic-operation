@@ -1,0 +1,43 @@
+{
+  "skill_name": "automatic-operation-skill",
+  "version": "2.0.0",
+  "description": "网页自动化操作录制 Skill — 前端监听 → 后端捕获 → AI 精炼 → 执行校验，四维闭环确保一次录制普遍适用。",
+  "start_url": "",
+  "variables": {},
+  "recorded_at": "2026-05-22T00:00:00Z",
+  "total_steps": 0,
+  "recording_config": {
+    "headed": false,
+    "ai_refined": false,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "locale": "zh-CN",
+    "wait_strategy": "networkidle",
+    "screenshot_before": true,
+    "screenshot_after": true,
+    "default_timeout_ms": 8000,
+    "max_retries": 3
+  },
+  "supported_actions": [
+    "click",
+    "fill",
+    "hover",
+    "press",
+    "check",
+    "uncheck",
+    "select",
+    "focus"
+  ],
+  "locator_strategies": [
+    "test_id",
+    "role",
+    "label",
+    "placeholder",
+    "text",
+    "css_fuzzy",
+    "css"
+  ],
+  "$schema": "https://openclaw.ai/schemas/skill_config.v2.json"
+}
