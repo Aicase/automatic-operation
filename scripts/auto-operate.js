@@ -12,7 +12,7 @@
  * 
  * 环境变量:
  *   PLAYWRIGHT_CLI_SESSION - playwright-cli 会话名，默认 'auto-op'
- *   NODE_PATH - 需包含 /home/aicase/.npm-global/lib/node_modules
+ *   NODE_PATH - 需包含 playwright-cli 全局安装的 node_modules 路径
  */
 const { execSync, spawn } = require('child_process');
 const fs = require('fs');
